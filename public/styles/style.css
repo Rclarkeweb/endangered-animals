@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(225, 238, 210);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Amatic SC',
+        sans-serif;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+#heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Amatic SC',
+        sans-serif;
+    text-align: center;
+    font-size: 65px;
+    margin: 0;
+    padding: 22px 0px 0px 0px;
+}
+
+#scientific {
+    font-style: italic;
+    font-family: 'Inter Tight',
+        sans-serif;
+    text-align: center;
+    font-size: 22px;
+    padding: 0px 0px 10px 0px;
+    margin: 0;
+    color: rgb(77, 109, 41);
+}
+
+#slogan {
+    font-style: italic;
+    font-family: 'Inter Tight',
+        sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding: 0px 0px 30px 0px;
+    margin: 0;
+    color: white;
+}
+
+#contentdisplay {
+    background-color: rgb(146, 194, 91);
+    height: auto;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Inter Tight',
+        sans-serif;
+    text-align: center;
+}
+
+
+.data {
+    font-weight: 500;
+    font-family: 'Inter Tight',
+        sans-serif;
+    text-align: center;
+    font-size: 18px;
+    padding: 0px 0px 25px 0px;
+    margin: 0;
+    color: black;
+}
+
+form {
+    display: block;
+    text-align: center;
+}
+
+input {
+    border-radius: 10px;
+    background-color: rgb(77, 109, 41);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 7px 14px;
+    font-family: 'Inter Tight',
+        sans-serif;
+    font-size: 16px;
+}
+
+.groupheading {
+    font-size: 38px;
+    width: auto;
+    font-family: 'Amatic SC',
+        sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: rgb(77, 109, 41);
+    margin: 10px;
+    color: white;
+    padding: 7px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* align-items: stretch; */
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-items {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 300px;
+    margin: 20px;
+}
+
+
+footer {
+    font-family: 'Inter Tight',
+        sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}

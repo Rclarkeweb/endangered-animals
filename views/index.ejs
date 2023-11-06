@@ -1,0 +1,107 @@
+<%- include("partials/header.ejs") %>
+
+    <div id="contentdisplay">
+
+        <form action="/findanimal" method="post">
+            <label for="animal">Choose an endangered animal:</label>
+            <br /><br />
+            <select name="animal" id="animal">
+                <option value="" disabled selected hidden>Choose an animal</option>
+                <option value="Pangolin">Pangolin</option>
+                <option value="Red Panda">Red Panda</option>
+                <option value="Giant Panda Bear">Giant Panda Bear</option>
+                <option value="Polar Bear">Polar Bear</option>
+                <option value="Amur Leopard">Amur Leopard</option>
+                <option value="Blue Whale">Blue Whale</option>
+                <option value="Clouded Leopard">Clouded Leopard</option>
+                <option value="Dusky Dolphin">Dusky Dolphin</option>
+                <option value="African Bush Elephant">African Bush Elephant</option>
+                <option value="Vaquita">Vaquita</option>
+                <option value="Leatherback Sea Turtle">Leatherback Sea Turtle</option>
+                <option value="Axolotl">Axolotl</option>
+                <option value="Snow Leopard">Snow Leopard</option>
+                <option value="Okapi">Okapi</option>
+            </select>
+            <input type="submit" id="findanimal" value="Find Animal" />
+        </form>
+
+
+        <%if (locals.name) {%>
+
+            <h1 id="heading">
+                <%=name%>
+            </h1>
+            <p id="scientific">
+                <%=taxonomy%>
+            </p>
+            <p id="slogan">
+                <%=slogan%>
+            </p>
+
+            <div class="flex-container">
+
+                <div class="flex-items">
+                    <h3 class="groupheading">HABITAT</h3>
+
+                    <p class="data">
+                        <%=locations%>
+                    </p>
+
+                    <p class="data">
+                        <%=habitat%>
+                    </p>
+                </div>
+
+                <div class="flex-items">
+                    <h3 class="groupheading">GROUP</h3>
+
+                    <p class="data">
+                        <%=group_behavior%>
+                    </p>
+                </div>
+
+                <div class="flex-items">
+                    <h3 class="groupheading">POPULATION</h3>
+
+                    <p class="data">
+                        <%=population%>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="flex-container">
+
+                <div class="flex-items">
+                    <h3 class="groupheading">DIET</h3>
+
+                    <p class="data">
+                        <%=diet%>
+                    </p>
+                </div>
+
+                <div class="flex-items">
+                    <h3 class="groupheading">THREAT</h3>
+
+                    <p class="data">
+                        <%=threat%>
+                    </p>
+                </div>
+
+                <div class="flex-items">
+                    <h3 class="groupheading">LIFESPAN</h3>
+
+                    <p class="data">
+                        <%=lifespan%>
+                    </p>
+                </div>
+            </div>
+
+            <%}%>
+    </div>
+
+
+
+
+
+    <%- include("partials/footer.ejs") %>
