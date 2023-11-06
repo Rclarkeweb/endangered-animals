@@ -32,3 +32,7 @@ You can copy this project to practise using APIs, Node.js and Express.js if you 
 ## Usage and license
 
 You may fork or copy this project for your own **personal** use.
+
+## Screenshot
+
+![image](https://github.com/Rclarkeweb/endangered-animals/assets/108008511/1ac7f83c-0c9a-476f-9811-ff4a2d73c1dd)
